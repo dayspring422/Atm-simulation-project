@@ -1,6 +1,7 @@
 # Atm-simulation-project
+
 Overview
-This project is a simple ATM simulation written in Java. It demonstrates basic concepts of object-oriented programming, including classes, objects, inheritance, and encapsulation. The ATM simulation allows users to create accounts, log in, and perform various banking transactions such as viewing transaction history, making deposits, withdrawals, and transfers.
+This project is a simple ATM simulation written in Java. It demonstrates basic concepts of object-oriented programming, including classes, objects, inheritance, and encapsulation. The ATM simulation allows users to create accounts, log in, and perform various banking transactions such as viewing transaction history, making deposits, withdrawals, and transfers. This project now includes a graphical user interface (GUI) built using Swing.
 
 Features
 User account creation with unique ID and secure PIN
@@ -10,37 +11,26 @@ Viewing account transaction history
 Depositing funds
 Withdrawing funds
 Transferring funds between accounts
+Graphical User Interface (GUI) for better user interaction
 Getting Started
 Prerequisites
 Java Development Kit (JDK) 8 or higher
 A Java IDE or a text editor
-Command line interface for compiling and running the application
 
-User created with ID: 123456
-User pin is: 1234
+Example Output
+When you run the application, a GUI window will open prompting for user ID and PIN. Upon successful login, the main menu will be displayed with options for various banking transactions.
 
-Welcome to Bank of Dayspring
-
-Enter user ID: 123456
-Enter pin: 1234
-Welcome Dayspring, what would you like to do?
- 1) Show account transaction history
- 2) Withdrawal
- 3) Deposit
- 4) Transfer
- 5) Quit
-Enter choice:
 Project Structure
 The project consists of the following classes:
 
-ATM: The main class that runs the ATM simulation.
+ATMGUI: The main class that runs the ATM simulation with a graphical user interface.
 Bank: Manages users and accounts, and provides methods for creating unique IDs.
 User: Represents a bank customer with attributes such as name, UUID, and a list of accounts.
 Account: Represents a bank account with attributes such as name, UUID, and a list of transactions.
 Transaction: Represents a transaction with attributes such as amount, timestamp, and memo.
 Code Description
-ATM.java
-Contains the main method that initializes the bank, creates a user, and starts the ATM simulation loop. It includes methods for the main menu prompt and user menu interactions.
+ATMGUI.java
+Contains the main method that initializes the bank, creates a user, and starts the ATM simulation with a graphical user interface. It includes methods for displaying the login screen and main menu, and handling user interactions.
 
 Bank.java
 Manages the creation of users and accounts. It generates unique IDs for users and accounts and provides methods for user authentication and account management.
@@ -55,7 +45,7 @@ Transaction.java
 Represents a transaction with an amount, timestamp, memo, and the account it belongs to. It includes constructors for creating transactions with or without memos.
 
 Future Improvements
-Implement a graphical user interface (GUI) for better user interaction
+Enhance GUI to include more features and better user experience
 Add more account types and features such as loan accounts
 Enhance security measures for PIN handling and user authentication
 Implement persistent storage for user and account data
